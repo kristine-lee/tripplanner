@@ -1,5 +1,7 @@
 const mapboxgl = require("mapbox-gl");
+const marker = require("./marker");
 mapboxgl.accessToken = "pk.eyJ1IjoibGlhbGpvaG4iLCJhIjoiY2tjMG80dWdkMWxrdzM1bnRxZTYybzlheSJ9.tkCOZV5GRIHsxiQGIp_OWw";
+
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -7,4 +9,5 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
 console.log('this is working! hooray!')
